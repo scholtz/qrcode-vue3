@@ -45,7 +45,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/scholtz/qrcode-vue3.git"
+    "url": "git+https://github.com/Gimanh/qr-code-vue3.git"
   },
   "keywords": [
     "qr",
@@ -63,10 +63,10 @@
     "logo",
     "design"
   ],
-  "author": "Ludovit Scholtz <ludovit@scholtz.sk>, Diadal <info@diadal.com.ng>",
+  "author": "Nikolay Giman <gimanhead@gmail.com>, Ludovit Scholtz <ludovit@scholtz.sk>, Diadal <info@diadal.com.ng>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/scholtz/qrcode-vue3/issues"
+    "url": "https://github.com/Gimanh/qr-code-vue3/issues"
   },
-  "homepage": "https://github.com/scholtz/qrcode-vue3"
+  "homepage": "https://github.com/Gimanh/qr-code-vue3"
 }
