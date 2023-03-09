@@ -10,15 +10,9 @@ this clone copy of https://qr-code-styling.com
 
 If you have issues / suggestions / notes / questions, please open an issue or contact me. Let's create a cool library together.
 
-### Support this project
-
-<p>Please donate algorand to support this project:</p>
-<img src="https://scholtz.github.io/wallet/donate.png" alt="Donate" width="240" height="240" style="max-width: 100%;">
-
 ### Examples
 
 <p float="left">
-<img style="display:inline-block" src="https://raw.githubusercontent.com/scholtz/qrcode-vue3/master/src/assets/facebook_example_new.png" width="240" />
 <img style="display:inline-block" src="https://raw.githubusercontent.com/scholtz/qrcode-vue3/master/src/assets/qr_code_example.png" width="240" />
 <img style="display:inline-block" src="https://raw.githubusercontent.com/scholtz/qrcode-vue3/master/src/assets/telegram_example_new.png" width="240" />
 </p>
@@ -26,7 +20,7 @@ If you have issues / suggestions / notes / questions, please open an issue or co
 ### Installation
 
 ```
-npm install qrcode-vue3 --save
+npm install qr-code-generator-vue3 --save
 ```
 
 ### QR Code Scanner
