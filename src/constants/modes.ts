@@ -1,4 +1,4 @@
-import { Mode } from '../types'
+import type { Mode } from '../types'
 
 interface Modes {
   [key: string]: Mode;

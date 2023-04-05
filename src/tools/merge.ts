@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import { UnknownObject } from '../types'
+import type { UnknownObject } from '../types'
 
 const isObject = (obj: Record<string, unknown>): boolean => !!obj && typeof obj === 'object' && !Array.isArray(obj)
 

@@ -1,4 +1,4 @@
-import { TypeNumber } from '../types'
+import type { TypeNumber } from '../types'
 
 interface TypesMap {
   [key: number]: TypeNumber;

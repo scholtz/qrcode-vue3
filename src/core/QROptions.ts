@@ -1,6 +1,6 @@
 import qrTypes from '../constants/qrTypes'
 import errorCorrectionLevels from '../constants/errorCorrectionLevels'
-import {
+import type {
   DotType,
   GradientType,
   CornerSquareType,

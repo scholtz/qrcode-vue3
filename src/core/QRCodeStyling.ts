@@ -2,9 +2,9 @@ import getMode from '../tools/getMode'
 import mergeDeep from '../tools/merge'
 import downloadURI from '../tools/downloadURI'
 import QRCanvas from './QRCanvas'
-import defaultOptions, { Options, RequiredOptions } from './QROptions'
+import defaultOptions, { type Options, type RequiredOptions } from './QROptions'
 import sanitizeOptions from '../tools/sanitizeOptions'
-import { Extension, QRCode } from '../types'
+import type { Extension, QRCode } from '../types'
 import qrcode from 'qrcode-generator'
 
 type DownloadOptions = {

@@ -4,9 +4,9 @@ import errorCorrectionPercents from '../constants/errorCorrectionPercents'
 import QRDot from './QRDot'
 import QRCornerSquare from './QRCornerSquare'
 import QRCornerDot from './QRCornerDot'
-import { RequiredOptions, Gradient } from './QROptions'
+import type { RequiredOptions, Gradient } from './QROptions'
 import gradientTypes from '../constants/gradientTypes'
-import { QRCode } from '../types'
+import type { QRCode } from '../types'
 
 type FilterFunction = (i: number, j: number) => boolean;
 

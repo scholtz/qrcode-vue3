@@ -1,4 +1,4 @@
-import { Gradient, RequiredOptions } from '../core/QROptions'
+import type { Gradient, RequiredOptions } from '../core/QROptions'
 
 function sanitizeGradient (gradient: Gradient): Gradient {
   const newGradient = { ...gradient }

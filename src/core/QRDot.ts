@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/unbound-method */
 import dotTypes from '../constants/dotTypes'
-import { DotType } from '../types'
+import type { DotType } from '../types'
 
 type GetNeighbor = (x: number, y: number) => boolean;
 type DrawArgs = {

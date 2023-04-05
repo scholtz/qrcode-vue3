@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/unbound-method */
 import cornerSquareTypes from '../constants/cornerSquareTypes'
-import { CornerSquareType } from '../types'
+import type { CornerSquareType } from '../types'
 
 type DrawArgs = {
   x: number;

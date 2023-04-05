@@ -1,4 +1,4 @@
-import { DotTypes } from '../types'
+import type { DotTypes } from '../types'
 
 export default {
   dots: 'dots',

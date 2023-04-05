@@ -1,4 +1,4 @@
-import { CornerSquareTypes } from '../types'
+import type { CornerSquareTypes } from '../types'
 
 export default {
   dot: 'dot',
