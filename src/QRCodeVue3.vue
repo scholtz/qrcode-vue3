@@ -3,8 +3,9 @@
     <div v-if="imageUrl" :class="myclass">
       <img :src="imageUrl" :class="imgclass" crossorigin="anonymous" />
     </div>
-    <div v-if="download">
-      <button @click="onDownloadClick" :class="downloadButton">
+    <div v-if="download" @click="onDownloadClick">
+      <slot v-if="$slots['download-button']" name="download-button" :base64="imageUrl"/>
+      <button v-else :class="downloadButtonClass">
         {{ ButtonName }}
       </button>
     </div>
@@ -28,7 +29,7 @@ export default defineComponent({
       type: String,
       default: ""
     },
-    downloadButton: {
+    downloadButtonClass: {
       type: String,
       default: ""
     },
@@ -99,10 +100,17 @@ export default defineComponent({
       type: Boolean,
       default: false
     },
-
     downloadOptions: {
-      type: Object,
-      default: () => ({ name: "vqr", extension: "png" })
+        type: Object,
+        default: () => ({ name: "vqr", extension: "png" })
+    },
+    onDownload: {
+        type: Function,
+        default: () => {}
+    },
+    onGenerated: {
+      type: Function,
+      default: () => {}
     }
   },
   data() {
@@ -138,12 +146,19 @@ export default defineComponent({
         cornersSquareOptions: this.cornersSquareOptions,
         cornersDotOptions: this.cornersDotOptions
       });
-
       this.imageUrl = await this.qrCode.getImageUrl(this.fileExt);
+    },
+    async imageUrl() {
+      this.onGenerated(this.imageUrl);
     }
   },
   async mounted() {
     this.imageUrl = await this.qrCode.getImageUrl(this.fileExt);
+  },
+  methods: {
+    onDownloadClick (_event: MouseEvent) {
+      this.onDownload(this.imageUrl);
+    }
   }
 });
 </script>
