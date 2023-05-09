@@ -103,6 +103,10 @@ export default defineComponent({
     downloadOptions: {
       type: Object,
       default: () => ({ name: "vqr", extension: "png" })
+    },
+    onDownloadClick: {
+      type: Function,
+      default: () => ({}),
     }
   },
   data() {
