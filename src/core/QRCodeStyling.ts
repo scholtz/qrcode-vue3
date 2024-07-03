@@ -5,7 +5,7 @@ import QRCanvas from "./QRCanvas";
 import defaultOptions, { type Options, type RequiredOptions } from "./QROptions";
 import sanitizeOptions from "../tools/sanitizeOptions";
 import type { Extension, QRCode } from "../types";
-import qrcode from "qrcode-generator";
+import * as qr from "qrcode-generator";
 
 type DownloadOptions = {
   name?: string;
@@ -38,7 +38,7 @@ export default class QRCodeStyling {
       return;
     }
 
-    this._qr = <QRCode>qrcode(this._options.qrOptions.typeNumber, this._options.qrOptions.errorCorrectionLevel);
+    this._qr = <QRCode>qr.default(this._options.qrOptions.typeNumber, this._options.qrOptions.errorCorrectionLevel);
     this._qr.addData(this._options.data, this._options.qrOptions.mode || getMode(this._options.data));
     this._qr.make();
     this._canvas = new QRCanvas(this._options);
