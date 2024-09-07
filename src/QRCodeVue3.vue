@@ -4,23 +4,23 @@ import QRCodeVue3Async from "./QRCodeVue3Async.vue";
 
 export interface Props {
   value: string;
-  width: number | undefined;
-  height: number | undefined;
-  margin: number | undefined;
-  imgclass: string | undefined;
-  myclass: string | undefined;
-  downloadButton: string | undefined;
-  buttonName: string | undefined;
-  qrOptions: any | undefined;
-  imageOptions: any | undefined;
-  dotsOptions: any | undefined;
-  backgroundOptions: any | undefined;
-  cornersSquareOptions: any | undefined;
-  cornersDotOptions: any | undefined;
-  fileExt: string | undefined;
-  image: string | undefined;
-  download: boolean | undefined;
-  downloadOptions: any | undefined;
+  width?: number;
+  height?: number;
+  margin?: number;
+  imgclass?: string;
+  myclass?: string;
+  downloadButton?: string;
+  buttonName?: string;
+  qrOptions?: any;
+  imageOptions?: any;
+  dotsOptions?: any;
+  backgroundOptions?: any;
+  cornersSquareOptions?: any;
+  cornersDotOptions?: any;
+  fileExt?: string;
+  image?: string;
+  download?: boolean;
+  downloadOptions?: any;
 }
 
 const props = withDefaults(defineProps<Props>(), {
