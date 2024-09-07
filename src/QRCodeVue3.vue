@@ -4,23 +4,23 @@ import QRCodeVue3Async from "./QRCodeVue3Async.vue";
 
 export interface Props {
   value: string;
-  width: number;
-  height: number;
-  margin: number;
-  imgclass: string;
-  myclass: string;
-  downloadButton: string;
-  ButtonName: string;
-  qrOptions: any;
-  imageOptions: any;
-  dotsOptions: any;
-  backgroundOptions: any;
-  cornersSquareOptions: any;
-  cornersDotOptions: any;
-  fileExt: string;
-  image: string;
-  download: boolean;
-  downloadOptions: any;
+  width: number | undefined;
+  height: number | undefined;
+  margin: number | undefined;
+  imgclass: string | undefined;
+  myclass: string | undefined;
+  downloadButton: string | undefined;
+  buttonName: string | undefined;
+  qrOptions: any | undefined;
+  imageOptions: any | undefined;
+  dotsOptions: any | undefined;
+  backgroundOptions: any | undefined;
+  cornersSquareOptions: any | undefined;
+  cornersDotOptions: any | undefined;
+  fileExt: string | undefined;
+  image: string | undefined;
+  download: boolean | undefined;
+  downloadOptions: any | undefined;
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -31,7 +31,7 @@ const props = withDefaults(defineProps<Props>(), {
   imgclass: "",
   myclass: "",
   downloadButton: "",
-  ButtonName: "Download",
+  buttonName: "Download",
   qrOptions: {
     typeNumber: 0,
     mode: "Byte",
@@ -64,7 +64,7 @@ const props = withDefaults(defineProps<Props>(), {
   <Suspense>
     <QRCodeVue3Async
       :background-options="props.backgroundOptions"
-      :button-name="props.ButtonName"
+      :button-name="props.buttonName"
       :corners-dot-options="props.cornersDotOptions"
       :corners-square-options="props.cornersSquareOptions"
       :dots-options="props.dotsOptions"
